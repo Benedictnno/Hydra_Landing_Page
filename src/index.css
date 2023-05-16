@@ -1,127 +1,68 @@
 *{
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
+:root{
+  --main-color: #343045;
+  --light-main-color1: #C0B7E8;
+  --light-main-color2: #8176AF;
+}
 body{
-  background-color: #343045;
-  margin:.75rem 2rem;
-
+  background-color:var(--main-color) ;
+  box-sizing: border-box;
+  width: 100vw;
+  /* margin: 1rem; */
 }
 
-.contact{
-  border: 2px solid #fff;
-  border-radius: 20px 20px;
-  transition: all linear 0.2s;
-}
-.contact:hover{
-  color: black;
-  background-color: #fff;
-}
-.join{
-  border: 1px solid transparent;
-  background: linear-gradient(-90deg,#C0B7E8 0%, #8176AF 100%);
-  border-radius: 20px 20px;
-  color: #fff;
-  margin: 0 0.75rem ;
-
-}
 .Top{
-  margin: 5rem .7rem;
-  display: flex;
-  gap: 2em;
-}
-
-.Top_a > p{
-  color: #fff;
-  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(1 , 4fr 6fr);
+  place-items: center;
 }
 
 .Top-title{
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  font-weight: 800;
   color: #fff;
 }
-.Top-btn> button{
-padding: .4rem .7rem;
-border-radius: 7px;
-border: none;
-cursor: pointer;
-background: linear-gradient(45deg, #8176AF,#C0B7E8);
-margin: 2em 0;
-width: 10rem;
-}
 
-.Top-text{
-  background: linear-gradient(270.97deg,
-        #FFE580 -21.36%,
-        #FF7571 -2.45%,
-        #EA5DAD 26.84%,
-        #C2A0FD 64.15%,
-        #3BF0E4 108.29%,
-        #B2F4B6 159.03%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.login{
+.Top-P{
+  font-weight: 500;
   color: #fff;
-  background-color: #343045;
-  padding: 7px;
-  border-radius: 5px;
-  cursor: pointer;
+  font-size: 1.2rem;
 }
 
-.form-section{
-  transition: all linear 2s;
-}
-
-.form_text{
-  margin: 2rem  0;
-}
-.form{
-  margin: .5rem;
-}
-
-.form > input{
-  width: 15rem;
-  height: 2rem;
-  border-radius: 5px;
-}
-.login_form{
-  background-color: #8176AF;
-  position: absolute;
-  left: 30%;
-  top: 20%;
-  padding: 2rem .75rem;
-  border-radius: 10px;
-
-}
-
-.close{
-  position: absolute;
-  right: 0;
-  top: 0;
-  cursor: pointer;
-}
-
-.submit{
-  padding: 0.5rem;
-  border-radius: 5px;
-  border: none;
-  display: inline-block;
-  margin: .5rem 1rem 0 0;
-  cursor: pointer;
+.Top-btn-container{
+  display: flex;
+  align-items: center;
 }
 
 .Top-btn{
-  display: grid;
-  grid-template-columns: repeat(2 , 1fr);
-  max-width: 22rem;
+  padding: 1.2rem;
+  font-size: large;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 10px ;
+  background: linear-gradient(90deg,#8176AF,#C0B7E8);
+  border: transparent;
 }
 
 .Top-image{
-  border: 20px solid #37314e;
-  border-radius: 70px 70px 70px 170px;
- max-width: 22rem;
- margin-left: 10rem ;
+  border-radius: 12% 12% 12% 50%;
+  border: 20px solid transparent;
+  display: block;
+  margin: auto;
 }
+
+.Top-text{
+  background: linear-gradient(90deg,
+        #8176AF,
+          #C0B7E8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+

@@ -7,6 +7,7 @@ const Ul = styled.ul`
   flex-flow: row nowrap;
   align-items: center;
   color: #fff;
+  
 
   li {
     padding: 0.75rem;
@@ -39,6 +40,7 @@ const RightNav = () => {
   const { setSignUp,open,setOpen } = useContext(Appcomponet);
   return (
     <Ul open={open}>
+      
       <li>Home</li>
       <li>services</li>
       <li>Technologies</li>

@@ -11,11 +11,13 @@ const NavBar = styled.nav`
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
- 
+  font-size: 1.3rem;
+  margin: 1rem 0;
 
   .logo {
     padding: 0.8rem 0;
     display: flex;
+    // font-size: 30rem;
   }
 
   .responsive {
@@ -23,6 +25,7 @@ const NavBar = styled.nav`
     max-width: 3.5rem;
     max-height: 4rem;
     height: auto;
+    padding: .2rem ;
   }
 `;
 const Nav = () => {
