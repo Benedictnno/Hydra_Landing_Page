@@ -8,12 +8,14 @@
   --main-color: #343045;
   --light-main-color1: #C0B7E8;
   --light-main-color2: #8176AF;
+  --fontFamily: "Montserrat", sans-serif;
 }
 body{
   background-color:var(--main-color) ;
   box-sizing: border-box;
   width: 100vw;
   /* margin: 1rem; */
+ color: #fff;
 }
 
 .Top{

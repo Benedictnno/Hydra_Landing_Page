@@ -3,7 +3,6 @@ import About from "./About";
 import Build from "./Build";
 import longArrow from "../../images/longArrow.png";
 import styled from "styled-components";
-
 const Intro = () => {
   return (
     <>
@@ -27,6 +26,7 @@ const Intro = () => {
 
       <About />
       <Build />
+
     </>
   );
 };

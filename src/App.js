@@ -1,9 +1,13 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 import Nav from "./Components/Nav";
 import Top from "./Components/Top";
 import Info from "./Components/Info";
 import Intro from "./Components/Introduction/Intro";
-import { useState } from "react";
+import Cards from "./Components/Cards";
+import Tech from "./Components/Introduction/Tech";
+import Activities from "./Components/Activities";
+import Form from "./Components/Form";
+import Footer from "./Components/Footer";
 export const Appcomponet = createContext();
 
 function App() {
@@ -18,8 +22,13 @@ function App() {
       >
         <Nav />
         <Top />
-        <Info/>
-        <Intro/>
+        <Info />
+        <Intro />
+        <Cards />
+        <Tech />
+        <Activities/>
+        <Form/>
+        <Footer/>
       </Appcomponet.Provider>
     </div>
   );

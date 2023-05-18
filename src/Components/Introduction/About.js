@@ -1,11 +1,23 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Mask_group from "../../images/Mask_group.png";
 import styled from 'styled-components';
+import AOS from "aos";
+import "aos/dist/aos.css";
 const About = () => {
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []); 
   return (
     <Wrapper>
-      <img src={Mask_group} alt="" />
-      <div>
+      <img
+        src={Mask_group}
+        alt=""
+        data-aos="fade-right"
+        data-aos-duration="2000"
+      />
+      <div data-aos="fade-left" data-aos-duration="2000">
         <h1>ABOUT</h1>
         <h1>HYDRA VR</h1>
         <br />
