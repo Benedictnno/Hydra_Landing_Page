@@ -22,20 +22,20 @@ const Info = () => {
       },
     ];
   return (
-    <Wrapper>
-      {data.map(({icon,header,text},index)=>{
+    <Wrapper className="responsive_info">
+      {data.map(({ icon, header, text }, index) => {
         return (
-          <article className={ index===1? 'border' : null} key={index}>
-            <div className='icon'>{icon}</div>
+          <article className={index === 1 ? "border" : null} key={index}>
+            <div className="icon">{icon}</div>
             <div>
               <h3>{header}</h3>
               <p>{text}</p>
             </div>
           </article>
-        )})
-      }
+        );
+      })}
     </Wrapper>
-  )
+  );
 }
 
 
@@ -59,6 +59,13 @@ const Wrapper = styled.section`
     padding: 0 2rem;
     border-left: 1px solid var(--light-main-color1);
     border-right: 1px solid var(--light-main-color1);
+  }
+
+  @media screen and (max-width: 768px) {
+    .border {
+      padding: 0 ;
+      border: none;
+    }
   }
 `;
 export default Info

@@ -1,17 +1,18 @@
-import React, { useContext } from 'react'
-import styled from 'styled-components';
-import { Appcomponet } from '../App';
+import React, { useContext } from "react";
+import styled from "styled-components";
+import { Appcomponet } from "../App";
 const Ul = styled.ul`
   list-style: none;
   display: flex;
+  justify-content: space-between;
   flex-flow: row nowrap;
   align-items: center;
   color: #fff;
-  
+  margin-left: 10rem;
 
   li {
     padding: 0.75rem;
-    cursor:pointer;
+    cursor: pointer;
   }
 
   @media (max-width: 768px) {
@@ -31,16 +32,14 @@ const Ul = styled.ul`
     }
   }
 
-  .mid-nav{
+  .mid-nav {
     display: flex;
   }
-
 `;
 const RightNav = () => {
-  const { setSignUp,open,setOpen } = useContext(Appcomponet);
+  const { setSignUp, open, setOpen } = useContext(Appcomponet);
   return (
     <Ul open={open}>
-      
       <li>Home</li>
       <li>services</li>
       <li>Technologies</li>
@@ -48,7 +47,12 @@ const RightNav = () => {
 
       <div className="mid-nav">
         <li className="contact">Contact us</li>
-        <li className="join" onClick={(() => {return setSignUp(true), setOpen((prev) =>!prev)})}>
+        <li
+          className="join"
+          onClick={() => {
+            return setSignUp(true), setOpen((prev) => !prev);
+          }}
+        >
           Join Hydra
         </li>
       </div>
@@ -56,4 +60,4 @@ const RightNav = () => {
   );
 };
 
-export default RightNav
+export default RightNav;

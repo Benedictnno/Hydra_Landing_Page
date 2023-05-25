@@ -23,19 +23,19 @@ const Footer = () => {
 
   return <Wrapper>
 <img src={Vector} alt="" />
-<div>{data1.map((items)=>{
-    return <h2>{items}</h2>
+<div className="data1">{data1.map((items)=>{
+    return <h2 className="datatext" key={items}>{items}</h2>
 })}</div>
-<div>{data2.map((items)=>{
-    return <h2>{items}</h2>
+<div className="data2">{data2.map((items)=>{
+    return <h2 className="datatext" key={items}>{items}</h2>;
 })}</div>
 <div>
     <h2>SOCIALIZE ON HYDRA</h2>
     
     <div className="icons_container">
 
-    {icon.map((items)=>{
-        return <div  className="icons">{items}</div>
+    {icon.map((items,index)=>{
+        return <div  className="icons" key={index}>{items}</div>
         
     })}
 
@@ -48,18 +48,79 @@ const Footer = () => {
 const Wrapper = styled.section`
   display: grid;
   grid-template-columns: repeat(4, 4fr);
-  margin: 2rem 0;
+  margin: 3rem 0;
 
   .icons_container {
     display: flex;
   }
 
   .icons {
-    margin: 1rem;
-    font-size: 1.5rem;
-    font-weight: 800;
-    background-color: var(-light--main-color1);
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 900;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    // background: linear-gradient(90deg, #8176af, #c0b7e8);
+    border: 10px solid #c0b7e8;
+    margin: 0.5rem;
+  }
+
+  .data1 {
+    border-left: 2.5px solid #c0b7e8;
+    border-right: 2.5px solid #c0b7e8;
+    display: block;
+    margin: 0 auto;
+    padding: 0 4rem;
+  }
+  .data2 {
+    border-right: 2.5px solid #c0b7e8;
+    display: block;
+    margin: auto;
+    padding: 0 3rem 0 0;
+  }
+
+  .datatext {
+    margin-bottom: 1rem;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    margin: 3rem 0;
+
+    .icons_container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .data1 {
+      border: none;
+      te
+    }
+    .data2 {
+      border: none;
+      
+    }
+  }
+  @media screen and (max-width: 320px) {
+    display: grid;
+    grid-template-columns: repeat(1, 4fr);
+    margin: 3rem 0;
+
+    .icons_container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 `;
 

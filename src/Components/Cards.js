@@ -57,6 +57,8 @@ const Wrapper = styled.div`
   margin: 5.5rem 0;
   justify-content: center;
   color: #fff;
+  overflow-x: auto;
+  width:100%;
 
   div {
     background: radial-gradient(
@@ -85,8 +87,8 @@ const Wrapper = styled.div`
     font-family: var(--fontFamily);
     font-weight: 900;
     border-bottom: 2px solid var(--light-main-color1);
-    padding : .5em;
-    margin : .5em;
+    padding: 0.5em;
+    margin: 0.5em;
   }
 
   button {

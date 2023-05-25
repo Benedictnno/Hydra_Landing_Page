@@ -28,7 +28,7 @@ const Activities = () => {
     {data.map(({num,icon,text})=>{
       return(
 
-        <div className="container">
+        <div className="container" key={num}> 
             <h2 className="">{num}</h2>
             <div className="flex">
 
@@ -46,6 +46,7 @@ const Wrapper = styled.section`
   justify-content: center;
   text-align: center;
   margin: 1rem;
+  overflow-x: auto;
 
   .container {
     display: block;

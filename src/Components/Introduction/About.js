@@ -10,9 +10,10 @@ const About = () => {
     AOS.refresh();
   }, []); 
   return (
-    <Wrapper>
+    <section className="About responsive_intro">
       <img
         src={Mask_group}
+        className="image_size"
         alt=""
         data-aos="fade-right"
         data-aos-duration="2000"
@@ -36,24 +37,36 @@ const About = () => {
         </p>
         <button className="Top-btn spacing">Let's Get In Touch</button>
       </div>
-    </Wrapper>
+    </section>
   );
 }
 
 const Wrapper = styled.section`
-  display: grid;
-  grid-template-columns: repeat(1, 6fr 6fr);
-  place-items: center;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  margin: 2rem 0;
-  font-size: 1.2rem;
+ 
 
-  h1 {
-    font-size: 2rem;
-  }
+  
   button {
     margin-top: 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .responsive_Top {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    // .responsive_info {
+    //   display: flex;
+    //   flex-direction: column;
+    // }
+
+    // .responsive_intro {
+    //   display: flex;
+    //   flex-direction: column;
+    //   flex-wrap: nowrap;
+    //   flex-grow: 0;
+    //   flex-basis: content;
+    // }
   }
 `;
 

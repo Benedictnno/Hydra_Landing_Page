@@ -8,6 +8,9 @@ import Tech from "./Components/Introduction/Tech";
 import Activities from "./Components/Activities";
 import Form from "./Components/Form";
 import Footer from "./Components/Footer";
+import HowWeBuild from "./Components/Introduction/HowWeBuild";
+import ContainerImage from "./Components/ContainerImage";
+
 export const Appcomponet = createContext();
 
 function App() {
@@ -26,6 +29,8 @@ function App() {
         <Intro />
         <Cards />
         <Tech />
+        <ContainerImage/>
+        <HowWeBuild/>
         <Activities/>
         <Form/>
         <Footer/>

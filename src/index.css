@@ -6,6 +6,7 @@
 
 :root{
   --main-color: #343045;
+  --main-color2: #4f4c5e;
   --light-main-color1: #C0B7E8;
   --light-main-color2: #8176AF;
   --fontFamily: "Montserrat", sans-serif;
@@ -13,10 +14,20 @@
 body{
   background-color:var(--main-color) ;
   box-sizing: border-box;
-  width: 100vw;
-  /* margin: 1rem; */
- color: #fff;
+  font-family: var(--fontFamily);
+  text-align: center;
+  width: auto;
+  color: #fff;
+  scroll-behavior: smooth;
 }
+
+.image-container {
+  
+  margin: -5rem 0 -12rem 0;
+}
+ .image {
+   margin: 1rem;
+ }
 
 .Top{
   display: grid;
@@ -53,18 +64,106 @@ body{
 
 .Top-image{
   border-radius: 12% 12% 12% 50%;
-  border: 20px solid transparent;
+  border: 20px solid var(--main-color2);
   display: block;
   margin: auto;
+  width: fit-content;
 }
 
 .Top-text{
   background: linear-gradient(90deg,
         #8176AF,
           #C0B7E8);
+          background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 
+.About{
+  display: grid;
+    grid-template-columns: repeat(1, 6fr 6fr);
+    place-items: center;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+}
 
+.About>h1 {
+  font-size: 2rem;
+}
+
+.intro{
+  display: grid;
+    grid-template-columns: repeat(1, 6fr 6fr);
+    place-items: center;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 1rem;
+}
+
+ .intro-text {
+   display: flex;
+ }
+
+    .intro-text2 {
+      padding: 1rem 0 0 0rem;
+    }
+  
+    .intro>.intro-text>img {
+      margin: -1.2rem 0 0 7rem;
+    }
+
+         .HowSpacing {
+           margin-top: 17rem;
+
+         }
+
+ 
+@media screen and (max-width: 768px) {
+  .responsive_Top {
+      display: flex;
+     flex-direction: column-reverse;
+    }
+
+  .responsive_info{
+      display: flex;
+      flex-direction: column;
+      word-break: break-all;
+    }
+
+    .responsive_intro{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      flex-grow: 0;
+      flex-basis: content;
+    }
+
+
+    .intro{
+      display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+  .intro-text{
+    display: flex;
+      flex-direction: column;
+  }
+
+
+    .image-container {
+  
+      margin: -5rem 0 -6rem 0;
+    }
+  
+    .image {
+      margin: 0rem;
+    }
+
+  .image_size{
+    width: 80%;
+  }
+}

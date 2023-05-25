@@ -20,8 +20,8 @@ const Form = () => {
           placeholder={"Tell Us Something..."}
           id=""
 
-          cols="30"
-          rows="10"
+          cols="20"
+          rows="7"
         ></textarea>
         <button>Send to Hydra</button>
       </form>
@@ -66,12 +66,64 @@ const Wrapper = styled.section`
 
   button {
     font-size: 1.2rem;
-    padding: 1.3rem ;
+    padding: 1.3rem;
     border: 1px solid #8176af;
     border-radius: 1rem;
     margin: 0.5rem 1rem;
     background-color: #343045;
     color: #8176af;
+  }
+
+  @media screen and (max-width: 320px) {
+    width: 100vw;
+
+    input,
+    textarea {
+      font-size: 1rem;
+      width: 40vw;
+      border: 1px solid #8176af;
+      border-radius: 1rem;
+      margin: 0.5rem;
+      background-color: #343045;
+      color: #8176af;
+    }
+
+    div {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      place-items: center;
+    }
+    textarea,
+    .subject {
+      width: 40vw;
+
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    width: 100vw;
+
+    input,
+    textarea {
+      font-size: 1rem;
+      padding: 1.3rem 5rem;
+      border: 1px solid #8176af;
+      border-radius: 1rem;
+      margin: 0.5rem;
+      background-color: #343045;
+      color: #8176af;
+    }
+
+    div {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      place-items: center;
+    }
+    textarea,
+    .subject {
+      padding: 1.3rem 5rem;
+      font-size: 1rem;
+    }
   }
 `;
 

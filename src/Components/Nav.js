@@ -5,7 +5,7 @@ import vector from '../images/Vector.png'
 import Group from '../images/Group.svg'
 
 const NavBar = styled.nav`
-  width: 100%;
+  // width: 100%;
   heigth: 65px;
   border-bottom: 2px solid trasparent;
   padding: 0 20px;
@@ -17,7 +17,7 @@ const NavBar = styled.nav`
   .logo {
     padding: 0.8rem 0;
     display: flex;
-    // font-size: 30rem;
+    font-size: 30rem;
   }
 
   .responsive {

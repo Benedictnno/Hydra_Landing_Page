@@ -6,8 +6,8 @@ import styled from "styled-components";
 const Intro = () => {
   return (
     <>
-      <Wrapper>
-        <div>
+      <section className="intro">
+        <div className="responsive_intro">
           <h1>INTRODUCTION</h1>
           <h1 className="intro-text">
             <span className="intro-text2">TO HYDRA VR </span>{" "}
@@ -22,11 +22,10 @@ const Intro = () => {
           aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in.
           Lectus magna fringilla urna porttitor rhoncus vitae.
         </p>
-      </Wrapper>
+      </section>
 
       <About />
       <Build />
-
     </>
   );
 };
@@ -42,13 +41,7 @@ const Wrapper = styled.section`
     display: flex;
   }
 
-  .intro-text2 {
-    padding: 1rem 0 0 0rem;
-  }
-
-  img {
-    margin: -1.2rem 0 0 7rem;
-  }
+ 
 `;
 
 export default Intro;

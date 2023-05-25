@@ -7,7 +7,7 @@ import { Appcomponet } from '../App';
 const Top = () => {
   const {setSignUp} = useContext(Appcomponet);
   return (
-    <section className="Top">
+    <section className="Top responsive_Top">
       <article className="Top_a">
         <div className="Top-title">
           <span className="Top-text"> Dive</span> Into The Depths <br /> Of
@@ -29,7 +29,7 @@ const Top = () => {
       </article>
 
       <article className="Top_img">
-        <img src={TopImage} alt="" className="Top-image" />
+        <img src={TopImage} alt="" className="Top-image image_size" />
       </article>
     </section>
   );
