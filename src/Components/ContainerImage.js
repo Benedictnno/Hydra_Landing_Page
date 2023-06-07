@@ -9,8 +9,8 @@ const ContainerImage = () => {
 
   return (
     <div className="image-container">
-      {data.map((imgs) => {
-        return <img src={imgs} alt="" className="image" key={imgs} />;
+      {data.map((imgs ,index) => {
+        return <img src={imgs} alt="" className={index===0? 'image image1': index===2 ?'image imagelast':  index===3 ?'image imagelast':'image'} key={index} />;
       })}
     </div>
   );

@@ -112,9 +112,9 @@ const Wrapper = styled.section`
       
     }
   }
-  @media screen and (max-width: 320px) {
-    display: grid;
-    grid-template-columns: repeat(1, 4fr);
+  @media screen and (max-width: 425px) {
+    display: flex;
+  flex-direction: column;
     margin: 3rem 0;
 
     .icons_container {

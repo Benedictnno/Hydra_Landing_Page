@@ -44,6 +44,8 @@ const Wrapper = styled.section`
   justify-content: center;
   color: #fff;
   font-size: 1.4rem;
+  word-wrap: break-word;
+
   article {
     display: flex;
     margin: 3rem;
@@ -63,7 +65,7 @@ const Wrapper = styled.section`
 
   @media screen and (max-width: 768px) {
     .border {
-      padding: 0 ;
+      padding: 0;
       border: none;
     }
   }

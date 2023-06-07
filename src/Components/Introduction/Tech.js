@@ -30,15 +30,23 @@ const Wrapper = styled.section`
   border-radius: 100px;
   height: 200px;
   text-align: center;
-  display: block;
+  display: grid;
   margin: 3rem auto;
   color: #fff;
+  place-content: center;
 
- 
+  img {
+    display: block;
+    margin: 0.3rem auto;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 0.2rem;
+  }
 
- 
-
- 
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    border-radius: none;
+  }
 `;
 
 export default Tech

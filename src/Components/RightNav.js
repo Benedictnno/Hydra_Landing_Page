@@ -8,7 +8,8 @@ const Ul = styled.ul`
   flex-flow: row nowrap;
   align-items: center;
   color: #fff;
-  margin-left: 10rem;
+  // margin-left: 10rem;
+  z-index: 2;
 
   li {
     padding: 0.75rem;
@@ -23,9 +24,12 @@ const Ul = styled.ul`
     top: 0;
     right: 0;
     height: 100vh;
-    width: 300px;
-    padding-top: 3.5rem;
+    width: 320px;
+    // padding-top: 3.5rem;
+    padding-buttom: -3.5rem;
     transition: transform 0.3s ease-in-out;
+    // justify-content: none;
+    overflow-y: hidden;
 
     li {
       color: #fff;

@@ -38,10 +38,14 @@ const Cards = () => {
       btn: 'Try It Now'
     },
   ];
-  return <Wrapper>
+  return(
+  // <section className="card">
+
+  <Wrapper>
+
       {data.map(({image,header,text,btn},index)=>{
         return (
-          <div key={index} data-aos="flip-left" data-aos-duration="2000">
+          <div key={index} className="" data-aos="flip-left" data-aos-duration="2000">
             <img src={image} alt="" className={""} />
             <h2>{header}</h2>
             <p>{text}</p>
@@ -49,7 +53,8 @@ const Cards = () => {
           </div>
         );
       })}
-  </Wrapper>;
+  </Wrapper>
+  )
 };
 
 const Wrapper = styled.div`
@@ -57,8 +62,11 @@ const Wrapper = styled.div`
   margin: 5.5rem 0;
   justify-content: center;
   color: #fff;
+  width: 100vw;
   overflow-x: auto;
-  width:100%;
+
+  scroll-snap-align: start;
+  scroll-snap-type: x mandatory;
 
   div {
     background: radial-gradient(
@@ -73,6 +81,7 @@ const Wrapper = styled.div`
     padding: 2rem;
     border-radius: 20px;
     margin: 0 1rem;
+    width: 100vw;
   }
 
   img {
@@ -98,6 +107,10 @@ const Wrapper = styled.div`
     margin: 1rem;
     font-size: 1.2rem;
     background: linear-gradient(90deg, #8176af #c0b7e8);
+  }
+
+  .card {
+    width: 100%;
   }
 `;
 export default Cards;
