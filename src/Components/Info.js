@@ -43,12 +43,12 @@ const Wrapper = styled.section`
   display: flex;
   justify-content: center;
   color: #fff;
-  font-size: 1.4rem;
-  word-wrap: break-word;
+  font-size: 1.2rem;
+  // word-wrap: break-word;
 
   article {
     display: flex;
-    margin: 3rem;
+    margin: 2rem;
   }
 
   .icon {

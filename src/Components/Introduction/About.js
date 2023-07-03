@@ -13,7 +13,7 @@ const About = () => {
     <section className="About responsive_intro">
       <img
         src={Mask_group}
-        className="image_size"
+        className="image_size abt-image"
         alt=""
         data-aos="fade-right"
         data-aos-duration="2000"

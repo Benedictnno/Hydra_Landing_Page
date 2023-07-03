@@ -15,12 +15,10 @@ body{
   background-color:var(--main-color) ;
   /* box-sizing: border-box; */
   font-family: var(--fontFamily);
-  text-align: center;
   width: auto;
   color: #fff;
   scroll-behavior: smooth;
-  display: block;
-  margin: auto;
+ 
 }
 
 .image-container {
@@ -34,11 +32,12 @@ body{
 .Top{
   display: grid;
   grid-template-columns: repeat(1 , 4fr 6fr);
-  place-items: center;
+  /* place-items: center; */
+  height: 100vh;
 }
 
 .Top-title{
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 800;
   color: #fff;
 }
@@ -46,7 +45,7 @@ body{
 .Top-P{
   font-weight: 500;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .Top-btn-container{
@@ -55,7 +54,7 @@ body{
 }
 
 .Top-btn{
-  padding: 1.2rem;
+  padding: 1rem;
   font-size: large;
   font-weight: 600;
   text-align: center;
@@ -69,7 +68,16 @@ body{
   border: 20px solid var(--main-color2);
   display: block;
   margin: auto;
-  width: fit-content;
+  width: 50%;
+  height: auto;
+  
+}
+
+.abt-image{
+    display: block;
+      margin: auto;
+      width: 70%;
+      height: auto;
 }
 
 .Top-text{
@@ -89,7 +97,7 @@ body{
     color: #fff;
     font-family: "Montserrat", sans-serif;
     margin: 2rem 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .About>h1 {
@@ -122,6 +130,9 @@ body{
 
          }
 
+         .image-container{
+          display: flex;
+         }
  
 @media screen and (max-width: 768px) {
   .responsive_Top {
