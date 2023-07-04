@@ -31,7 +31,7 @@ const Form = () => {
 
 const Wrapper = styled.section`
   background: linear-gradient(90deg, #343045, #c0b7e8, #8176af, #343045);
-  width: 70vw;
+  width: 50vw;
   display: block;
   margin: auto;
   form {
@@ -39,13 +39,13 @@ const Wrapper = styled.section`
     flex-direction: column;
     justif-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
   }
 
   textarea,
   .subject {
-    padding: 1.3rem 18.5rem;
-    font-size: 1.2rem;
+    padding: 1em 11rem;
+    font-size: 1rem;
   }
   div {
     display: grid;
@@ -55,8 +55,8 @@ const Wrapper = styled.section`
 
   input,
   textarea {
-    font-size: 1.2rem;
-    padding: 1.3rem 6rem;
+    font-size: 1rem;
+    padding: 1.3rem 2rem;
     border: 1px solid #8176af;
     border-radius: 1rem;
     margin: 0.5rem 1rem;
@@ -65,7 +65,7 @@ const Wrapper = styled.section`
   }
 
   button {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 1.3rem;
     border: 1px solid #8176af;
     border-radius: 1rem;

@@ -6,7 +6,7 @@
 
 :root{
   --main-color: #343045;
-  --main-color2: #4f4c5e;
+  --main-color2: #39384b;
   --light-main-color1: #C0B7E8;
   --light-main-color2: #8176AF;
   --fontFamily: "Montserrat", sans-serif;
@@ -26,7 +26,10 @@ body{
  
 }
  .image {
-   margin: 1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+   margin: 2rem auto;
+   max-width: 200px;
  }
 
 .Top{
@@ -34,6 +37,7 @@ body{
   grid-template-columns: repeat(1 , 4fr 6fr);
   /* place-items: center; */
   height: 100vh;
+  margin-top: 5rem;
 }
 
 .Top-title{
@@ -61,6 +65,7 @@ body{
   border-radius: 10px ;
   background: linear-gradient(90deg,#8176AF,#C0B7E8);
   border: transparent;
+  cursor: pointer;
 }
 
 .Top-image{
@@ -72,6 +77,8 @@ body{
   height: auto;
   
 }
+
+
 
 .abt-image{
     display: block;
@@ -87,6 +94,8 @@ body{
           background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+  font-weight: 600;
 }
 
 
@@ -168,20 +177,26 @@ body{
 
 
     .image-container {
-  
+  display: grid;
+    grid-template-columns: repeat(2, 6fr);
       margin: -5rem 0 -6rem 0;
     }
   
     .image {
-      margin: -5rem auto 1rem;
+      margin-bottom: 2rem;
+      max-width: 150px;
     }
 
-    .image1{
+    /* .image1{
           margin-top: 5rem ;
     }
     .imagelast{
           margin-top: -10rem;
-    }
+    } */
+
+  body{
+    margin-left: 10px;
+  }
 
   .image_size{
     width: 80%;
